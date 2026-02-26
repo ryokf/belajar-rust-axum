@@ -11,3 +11,7 @@ pub async fn get_user() -> Json<User> {
 
     Json(user)
 }
+
+pub async fn post_user(Json(request): Json<User>) -> Json<User>{
+    Json(request)
+}
